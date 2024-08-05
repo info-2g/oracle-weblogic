@@ -63,7 +63,7 @@ Response File Version=1.0.0.0.0
 ORACLE_HOME='${MIDDLEWARE_HOME}'
  
 #Set this variable value to the Installation Type selected. e.g. Service Bus.
-INSTALL_TYPE=Service Bus' > ${TEMPORARY_DIRECTORY}/silent-osb.txt 
+INSTALL_TYPE=Service Bus' > ${TEMPORARY_DIRECTORY}/silent-forms.txt 
  
     echo 'inventory_loc='${ORACLE_INVENTORY_HOME}'
 inst_group='${ORACLE_INSTALL_GROUP}'' > ${TEMPORARY_DIRECTORY}/oraInst.loc
@@ -87,9 +87,9 @@ install_weblogic() {
     ${JAVA_HOME}/bin/java -Xms1024m -Xmx1024m -jar ${SOFTWARE_DIRECTORY}/${WEBLOGIC_FILE_NAME} -silent -responseFile ${TEMPORARY_DIRECTORY}/silent-weblogic.txt -invPtrLoc ${TEMPORARY_DIRECTORY}/oraInst.loc
 }
  
-install_oracle_service_bus() {
-    echo 'INSTALLING ORACLE SERVICE BUS'
-    ${JAVA_HOME}/bin/java -Xms1024m -Xmx1024m -jar ${SOFTWARE_DIRECTORY}/${OSB_FILE_NAME} -silent -responseFile ${TEMPORARY_DIRECTORY}/silent-osb.txt -invPtrLoc ${TEMPORARY_DIRECTORY}/oraInst.loc
+install_fyr() {
+    echo 'INSTALLING ORACLE FORMS & REPORTS'
+    ${JAVA_HOME}/bin/java -Xms1024m -Xmx1024m -jar ${SOFTWARE_DIRECTORY}/${FYR_FILE_NAME} -silent -responseFile ${TEMPORARY_DIRECTORY}/silent-forms.txt -invPtrLoc ${TEMPORARY_DIRECTORY}/oraInst.loc
 }
  
 create_silent_install_files
@@ -98,5 +98,4 @@ create_silent_install_files
  
 install_weblogic
  
-#install_oracle_service_bus
- 
+install_fyr

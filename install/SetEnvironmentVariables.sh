@@ -28,6 +28,10 @@ export JVM_FILE_NAME
 WEBLOGIC_FILE_NAME="fmw_12.2.1.4.0_infrastructure.jar"
 export WEBLOGIC_FILE_NAME
 
+# Name of the Forms & Reports file that is used in the installation
+FYR_FILE_NAME=fmw_12.2.1.19.0_fr_linux64.bin
+export FYR_FILE_NAME
+
 # Name of the OHS file
 OHS_FILE_NAME="ohs_121200_linux64.bin"
 export HTTPD_FILE_NAME
