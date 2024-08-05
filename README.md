@@ -12,20 +12,23 @@ También estos 2 archivos, al ser los únicos que son diferentes por ambiente, s
 
 ## INSTALACIÓN
 
-# Supuestos:
+## Supuestos:
 
 La instalación del ambiente debe ser realizada sobre un sistema operativo Linux que cumpla con la certificación de Oracle para el producto Oracle Forms & Reports 12.2.1.19. Revisar la sección "Linux Operating System Requirements" de la guía de instalación del producto.
 Para la instalación se requiere también de una base de datos de metadatos para la ejecución de la utilidad "Repository Creation Assistant (RCU)". La misma debe cumplir con los requisistos especificados en la sección "Database Requirements" de la guía de instalación del producto.
 
 https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.19/sysrs/system-requirements-and-specifications.html
 
+## Instalación de binarios:
 Ejecute el siguiente script para crear el usuario en el Sistema Operativo. Si lo considera necesario, modifique el script para cambiarn nombre y/o grupos.
 - [Creación del usuario del Sistema operativo (create_os_user.sh)](./install/create_os_user.sh)
+- Ejecute el script de [instalación de binarios inst_binaries.sh](./install/inst_binaries.sh)
+- Descargue y descomprima los parches en la carpeta $HOME/forms_patches y ejecute el script de [instalación de parches inst_binaries.sh](./install/inst_binaries.sh)
 
-# Configuración del entorno:
+## Configuración del entorno:
 Configure el archivo de propiedades (environment.properties) y el script SetEnvironmentVariables.sh con los datos de instalación. [Consulte el Anexo I](./AnexoI.txt) para mayor detalle respecto al primero y el [Anexo II](./AnexoII.txt) para el segundo.
 
-# Ejecución de los scripts de instalación:
+## Ejecución de los scripts de creación del dominio de Weblogic:
 
 - [Ejecute el script de creación del repositorio de metadatos create_repository.sh](./install/create_repository.sh)
 Este script realiza la creación del repositorio de metadatos con la herramienta del RCU. Consulte los prerrequisitos que debe cumplir la base de datos del repositorio en la documentación del producto mencionada más arriba.
