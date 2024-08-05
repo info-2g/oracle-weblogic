@@ -62,8 +62,8 @@ Response File Version=1.0.0.0.0
 #The oracle home location. This can be an existing Oracle Home or a new Oracle Home
 ORACLE_HOME='${MIDDLEWARE_HOME}'
  
-#Set this variable value to the Installation Type selected. e.g. Service Bus.
-INSTALL_TYPE=Service Bus' > ${TEMPORARY_DIRECTORY}/silent-forms.txt 
+#Set this variable value to the Installation Type selected. e.g. Forms and Reports Deployment.
+INSTALL_TYPE=Forms and Reports Deployment' > ${TEMPORARY_DIRECTORY}/silent-forms.txt 
  
     echo 'inventory_loc='${ORACLE_INVENTORY_HOME}'
 inst_group='${ORACLE_INSTALL_GROUP}'' > ${TEMPORARY_DIRECTORY}/oraInst.loc
