@@ -1,0 +1,16 @@
+# Especificación de las variables de entorno:
+
+## A continuación el listado de la variables de entorno que deben ser configuradas sí o sí para la instalación del ambiente:
+
+SCHEMA_PREFIX: prefijo del los esquemas de instalación del RCU (por ej. DEV para desarrollo o PRD para producción)
+SYSDBA_USER: usuario con el permiso SYSDBA para conectar a la base de datos de metadatos para la ejecución del RCU.
+DB_CONNECTION_STRING: URL jdbc de la base de datos de metadatos.
+
+## A continuación el listado de la variables de entorno que deben ser configuradas para el inicio, bajado y administración del ambiente:
+DOMAIN_NAME: nombre del dominio de weblogic
+
+JKS_FILE: Nombre del la billetera (Wallet) del entorno java (solo el nombre del archivo, sin especificar la ruta completa)
+SOFTWARE_DIRECTORY: directorio donde se encuentran los instaladores.
+
+WALLET_DIRECTORY: directorio donde se encuentra la wallet para el OHS.
+

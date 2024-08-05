@@ -1,0 +1,25 @@
+# Listado de propiedades
+## Algunas de las propiedades se encuentran en el directorio install, otras en el init, otras en ambos. Configure acorde a lo que necesite.
+
+node_manager_username: Super Usuario del Node Manager del AdminServer y local de todos los nodos.
+node_manager_password: Contraseña del Super Usuario del Node Manager del AdminServer
+node_manager_listen_port: LISTEN port del Node Manager del AdminServer, por defecto 5556
+node_manager_listen_port_local: LISTEN port del Node Manager del AdminServer, por defecto 5556
+node_manager_mode: especifica si los scripts se conectan al NodeManager en modo seguro (ssl) o no (plain). Por defecto es ssl.
+admin_server_name: Nombre del servidor administrativo, por defecto AdminServer.
+admin_username: super usuario de weblogic, por defecto weblogic.
+admin_password: contraseña del super usuario de weblogic.
+admin_server_listen_port: puerto no seguro del AdminServer, por defecto 7001.
+admin_server_ssl_listen_port: puerto seguro del AdminServer, por defecto 7002
+admin_server_listen_address: IP o host del AdminServer
+admin_server_listen_address_local= IP o host del NodeManager local, por defecto localhost. Configure un nombre expuesto en caso que sea una instalación de cluster.
+machine_user_id: Nombre de usuario del sistema operativo propietario de la machine local, por defecto oracle
+machine_group_id: Nombre del grupo del sistema operativo propietario de la machine local, por defecto oracle
+p_servers= listado separado por comas de los nombres de todos los hosts de la instalación. En caso que sea uno solo, el nombre del host.
+data_source_url: URL jdbc de la base de metadatos.
+data_source_password: contaseña del usuario SYS de la base de datos de metadatos.
+jks_password: contraseña de la wallet JKS.
+jks_alias: alias del certificado de identidad de la JKS.
+configure_ssl: si se configura el NodeManager y el AdminServer en modo seguro (SSL). Por defecto, yes
+p_forms_port: puerto por defecto del server WLS_FORMS (7010)
+p_reports_port: puerto por defecto del server WLS_REPORTS (7010)
