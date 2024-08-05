@@ -18,12 +18,8 @@ systemctl disable firewalld
 
 #Instalacióe paquetes
 #rpm -Uvh /mnt/software/jdk-8u341-linux-x64.rpm
-yum install -y libXp
-yum install -y libXtst
-yum install -y xauth
-yum install -y xclock
-yum install -y strace
-yum install -y net-tools
+#OEL 8.9
+yum install -y binutils gcc gcc-c++ glibc glibc-devel ksh libaio libaio-devel libgcc libnsl libstdc++ libstdc++-devel libX11 libXtst libXtst-devel make motif motif-devel openssl redhat-lsb redhat-lsb-core sysstat xorg-x11-utils
 
 rm -rf /etc/oracle
 mkdir /etc/oracle
