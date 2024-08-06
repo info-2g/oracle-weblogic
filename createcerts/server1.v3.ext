@@ -1,0 +1,26 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+[req_distinguished_name]
+countryName = País
+countryName_default = AR
+stateOrProvinceName = Provincia
+stateOrProvinceName_default = Buenos Aires
+localityName = Ciudad
+localityName_default = CABA
+organizationalUnitName    = Organización
+organizationalUnitName_default    = ORG.
+commonName = Nombre (CN)
+commonName_default = server1.local
+commonName_max    = 64
+
+[ v3_req ]
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = server1.local
+DNS.2 = server2.local
+IP.1 = 192.168.31.70
+IP.2 = 192.168.31.71
